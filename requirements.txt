@@ -4,6 +4,7 @@ idna==3.4
 python-dotenv==1.0.0
 requests==2.31.0
 six==1.16.0
+slack-bolt==1.18.0
 slack-sdk==3.23.0
 slackbot==1.0.5
 slacker==0.14.0
