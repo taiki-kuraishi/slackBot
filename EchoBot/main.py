@@ -1,7 +1,7 @@
-from slack_bolt import App
-from slack_bolt.adapter.socket_mode import SocketModeHandler
 import os
 from dotenv import load_dotenv
+from slack_bolt import App
+from slack_bolt.adapter.socket_mode import SocketModeHandler
 
 # read .env
 load_dotenv()
@@ -13,12 +13,14 @@ app = App(token=slack_bot_token)
 
 # listener
 @app.message("")
-def message_hello(message, say):
+def message_hello(message : dict, say):
     user_name = message['user']
     say(f"<@{user_name}>さんは以下のメッセージを送信しました\n{message['text']}")
     # say(f"Hey there <@{message['user']}>!")
     # print(message['text'])
     # print(message.keys())
+    # print(type(message))
+    # print(type(say))
 
 
 #  main
