@@ -3,7 +3,7 @@ from openai import OpenAI
 from dotenv import load_dotenv
 
 # read .env
-load_dotenv("../.env")
+load_dotenv()
 open_ai_org = os.environ['OPENAI_ORGANIZATION']
 TOKENS = int(os.environ['TOKEN'])
 N = int(os.environ['N'])
