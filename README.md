@@ -3,7 +3,6 @@
 
 ## Overview
 - - -
-【技育CAMP】マンスリーハッカソン vol.13に向けて作成されたSlack Bot
 - SayHello Bot
   - 'Hello'というメッセージを送信するSlack Bot
 - Echo Bot
